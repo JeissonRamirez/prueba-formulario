@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <div>
+        <div>
+            <form action="">
+                <h3>Nombre</h3>
+                <input required id="nombre" type="text">
+                <h3>Cedula</h3>
+                <input required id="cedula" type="number">
+
+                <h3>Fecha</h3>
+                <input required id="fecha" type="date" min="1930-01-01" max="2022-12-31">
+        </div>
+        <button required id="botonGuardar" onclick="registrar()" type="submit">Guardar</button>
+        </form>
+    </div>
+
+
+    <div>
+        <table>
+            <thead>
+                <h1>Clientes</h1>
+                <tr>
+                    <td>
+                        <h3>Id </h3>
+                    </td>
+                    <td>
+                        <h3>nombre </h3>
+                    </td>
+                    <td>
+                        <h3>cedula </h3>
+                    </td>
+                    <td>
+                        <h3>fecha</h3>
+                    </td>
+                    <td>
+                        <h3>edad</h3>
+                    </td>
+                    <td>
+                        <h3>acciones</h3>
+                    </td>
+
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+   <fieldset>
+    <div id="listCard">
+        <div class="card">
+
+            <h2>Nombre </h2>   <h3 >el pepe</h3>
+            <h2>nombre de mascota</h2>   <h3>el pepe</h3>
+            <h2>fecha de ingreso</h2>   <h3>el pepe</h3>
+            <h2>sintomas</h2>     <h3>el pepe</h3>
+            <h2>fecha de salidad</h2>   <h3>el pepe</h3>
+        </div>
+</fieldset>
+
+        <!-- 
+conexiones -->
+        <script>
+
+            document.querySelector('form').addEventListener('submit', event => {
+                event.preventDefault();
+                alert("se ha registrado un nuevo paciente")
+
+            })
+
+        </script>
+
+
+
+        <script src="index.js"></script>
+        <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen> ...
+</body>
+
+</html>
